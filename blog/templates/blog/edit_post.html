@@ -1,0 +1,9 @@
+<h1>Edit Blog Post</h1>
+
+<!--<a href="{% url 'blog:add_post' %}">Add Post</a>-->
+
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button>Save</button>
+</form>
