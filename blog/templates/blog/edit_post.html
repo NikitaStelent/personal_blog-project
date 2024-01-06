@@ -1,9 +1,15 @@
-<h1>Edit Blog Post</h1>
+{% extends 'blog/base.html' %}
 
-<!--<a href="{% url 'blog:add_post' %}">Add Post</a>-->
+{% block content %}
+    {% if request.user.is_authenticated %}
+        <div class="container">
+            <h2 class="mt-5">Edit Blog Post</h2>
 
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button>Save</button>
-</form>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="btn btn-primary mt-3">Save</button>
+            </form>
+        </div>
+    {% endif %}
+{% endblock %}

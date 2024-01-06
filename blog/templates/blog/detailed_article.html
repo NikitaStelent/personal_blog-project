@@ -4,16 +4,19 @@
 
 <div class="post-details">
   <div class="post-info">
-    <p><strong>Author:</strong> {{ post.author }}</p>
-    <p><strong>Date:</strong> {{ post.date }}</p>
+    <hr>
+    <p><strong>Автор:</strong> {{ post.author }}</p>
+    <p><strong>Пост написан:</strong> {{ post.date }}</p>
+    <p><strong>Категория:</strong> {{ post.category }}</p>
+    <hr>
   </div>
   <div class="post-content">
     <h1>{{ post.title }}</h1>
-    <p>{{ post.body }}</p>
+    <p>{{ post.body|safe }}</p>
   </div>
 </div>
 
-{% if request.user.is_authenticated %}
+{% if request.user.is_authenticated and post.author.id == request.user.id %}
 <div class="post-actions">
   <a class="btn btn-primary" href="{% url 'blog:edit_post' post.pk %}" style="margin-right: 10px;">Изменить пост</a>
   <a class="btn btn-danger" href="{% url 'blog:delete_post' post.pk %}" style="margin-left: 10px;">Удалить пост</a>

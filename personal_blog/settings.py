@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'portfolio',
     'blog',
     'users',
@@ -115,3 +116,8 @@ LOGOUT_URL = 'logout'
 
 LOGIN_REDIRECT_URL = 'blog:all_blogs'
 LOGOUT_REDIRECT_URL = 'blog:all_blogs'
+
+
+# FORMS
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
