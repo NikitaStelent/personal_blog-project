@@ -6,8 +6,8 @@
   <div class="post-info">
     <hr>
     <p><strong>Автор:</strong> {{ post.author }}</p>
+    <p><strong>Категория: <a href="{% url 'blog:category' post.category %}">{{ post.category }}</a></strong></p>
     <p><strong>Пост написан:</strong> {{ post.date }}</p>
-    <p><strong>Категория:</strong> {{ post.category }}</p>
     <hr>
   </div>
   <div class="post-content">
@@ -23,7 +23,7 @@
 </div>
 {% endif %}
 <div class="back-link">
-  <a class="btn btn-secondary" href="{% url 'blog:all_blogs' %}" style="margin-top: 10px;">Вернуться к списку статей</a>
+  <a class="btn btn-secondary" href="{% url 'blog:all_blogs' %}" style="margin-top: 10px;">Вернуться к списку постов</a>
 </div>
 
 
