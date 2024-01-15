@@ -1,0 +1,17 @@
+{% extends 'blog/base.html' %}
+{% load blog_tags %}
+
+{% block title %}Категории постов{% endblock %}
+
+{% block content %}
+
+    <h1>Категории постов</h1>
+
+    {% for category in categories_menu_list %}
+        <h4>
+            <a class="dropdown-item" href="{% url 'blog:category' category|slugify %}">{{ category|translate_category }}</a>
+        </h4>
+    {% endfor %}
+
+{% endblock %}
+

@@ -1,0 +1,20 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+   align-items: flex-start; /* добавьте это свойство */
+}
+
+
+
+.container-wide {
+    max-width: 70%;
+}
+
+nav {
+  background-color: #d5e1ff;
+}
+
+.dropdown {
+  margin-right: 0;
+  width: 150px;
+}

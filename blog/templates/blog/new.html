@@ -1,0 +1,49 @@
+<ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          {% if categories_menu %}
+              <div class="dropdown d-inline-block">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownCategoryButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Категории
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownCategoryButton">
+                  {% for category in categories_menu %}
+                    <a class="dropdown-item" href="{% url 'blog:category' category|slugify %}">{{ category|translate_category }}</a>
+                  {% endfor %}
+                </div>
+              </div>
+          {% endif %}
+        </li>
+        {% if not request.user.is_authenticated %}
+        <li>
+          <div class="dropdown d-inline-block">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Вход & Регистрация
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="{% url 'users:login' %}">Вход</a>
+              <a class="dropdown-item" href="{% url 'users:register' %}">Регистрация</a>
+            </div>
+          </div>
+        </li>
+    {% else %}
+    <li>
+      <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{ user.username }}
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="{% url 'blog:add_post' %}">Добавить пост</a>
+          <a class="dropdown-item" href="{% url 'users:profile' %}">Профиль</a>
+          <li><hr class="dropdown-divider"></li>
+          {% if request.user.is_superuser %}
+            <a class="dropdown-item" href="http://127.0.0.1:8000/admin">Админ-панель</a>
+          {% endif %}
+          <form method="post" action="{% url 'users:logout' %}">
+            {% csrf_token %}
+            <button type="submit" class="dropdown-item">Выход</button>
+          </form>
+        </div>
+      </div>
+    </li>
+    {% endif %}
+</ul>
