@@ -13,3 +13,4 @@ urlpatterns = [
     path('blog/category/<str:ctg>/', category_view, name='category'),
     path('blog/category_list/', category_list_view, name='category_list'),
 ]
+
