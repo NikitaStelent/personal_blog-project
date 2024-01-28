@@ -2,7 +2,6 @@
 
 [![Django](https://img.shields.io/badge/Django-%23092E20.svg?style=for-the-badge&logo=Django)](https://www.djangoproject.com/)
 [![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=Python)](https://www.python.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%2338B2AC.svg?style=for-the-badge&logo=Tailwind_CSS)](https://tailwindcss.com/)
 
 Этот сайт представляет собой личный сайт портфолио и блога, построенный с использованием Django, Python и Tailwind CSS.
 
