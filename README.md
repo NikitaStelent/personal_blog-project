@@ -2,8 +2,10 @@
 
 [![Django](https://img.shields.io/badge/Django-%23092E20.svg?style=for-the-badge&logo=Django)](https://www.djangoproject.com/)
 [![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=Python)](https://www.python.org/)
+[![CSS](https://img.shields.io/badge/CSS-%231572B6.svg?style=for-the-badge&logo=CSS3)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![HTML](https://img.shields.io/badge/HTML-%23E34234.svg?style=for-the-badge&logo=HTML5)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
-Этот сайт представляет собой личный сайт портфолио и блога, построенный с использованием Django, Python и Tailwind CSS.
+Этот сайт представляет собой личный сайт портфолио и блога, построенный с использованием Django, Python, CSS и HTML.
 
 **Описание**
 
@@ -29,3 +31,12 @@
 * Django
 * CSS
 * HTML
+
+**Выполнил:**
+
+[![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=GitHub)](https://github.com/NikitaStelent)
+
+
+**Обратная связь**
+
+Если у вас есть какие-либо вопросы или предложения по проекту, пожалуйста, не стесняйтесь обращаться к автору.
