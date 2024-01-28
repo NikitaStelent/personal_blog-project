@@ -33,7 +33,7 @@
 * HTML
 
 **Выполнил:**
-NikitaStelent
+* NikitaStelent
 [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=GitHub)](https://github.com/NikitaStelent)
 
 
