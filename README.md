@@ -1,4 +1,4 @@
-# Личный сайт портфолио и блога
+# Проект: Личный сайт портфолио и блога
 
 [![Django](https://img.shields.io/badge/Django-%23092E20.svg?style=for-the-badge&logo=Django)](https://www.djangoproject.com/)
 [![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=Python)](https://www.python.org/)
@@ -36,7 +36,3 @@
 * NikitaStelent
 [![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?style=for-the-badge&logo=GitHub)](https://github.com/NikitaStelent)
 
-
-**Обратная связь**
-
-Если у вас есть какие-либо вопросы или предложения по проекту, пожалуйста, не стесняйтесь обращаться к автору.
